@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" type="Resource" id=1]
+[ext_resource path="res://addons/qodot/src/resources/game-definitions/trenchbroom/trenchbroom_game_config_folder.gd" type="Script" id=3]
+[ext_resource path="res://addons/qodot/game_definitions/trenchbroom/qodot_trenchbroom_config_file.tres" type="Resource" id=4]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+
+[resource]
+script = ExtResource( 3 )
+export_file = false
+trenchbroom_games_folder = "C:/Applications/Trenchbroom/games"
+game_name = "Qodot"
+icon = SubResource( 1 )
+game_config_file = ExtResource( 4 )
+fgd_files = [ ExtResource( 1 ) ]

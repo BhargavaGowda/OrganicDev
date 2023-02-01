@@ -1,0 +1,70 @@
+// Game: Qodot
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures/Bricks;textures/Industrial;textures/Tech;textures/Urban"
+// brush 0
+{
+( -288 -32 -32 ) ( -288 -31 -32 ) ( -288 -32 -31 ) Urban/PAVEMENT 0 0 0 1 1
+( -32 -1120 -32 ) ( -32 -1120 -31 ) ( -31 -1120 -32 ) Urban/PAVEMENT 0 0 0 1 1
+( -32 -32 -32 ) ( -31 -32 -32 ) ( -32 -31 -32 ) Urban/PAVEMENT 0 0 0 1 1
+( 0 32 0 ) ( 0 33 0 ) ( 1 32 0 ) Urban/PAVEMENT 0 0 0 1 1
+( 0 32 0 ) ( 1 32 0 ) ( 0 32 1 ) Urban/PAVEMENT 0 0 0 1 1
+( 224 32 0 ) ( 224 32 1 ) ( 224 33 0 ) Urban/PAVEMENT 0 0 0 1 1
+}
+// brush 1
+{
+( -128 -512 0 ) ( -128 -511 0 ) ( -128 -512 1 ) Industrial/SUPPORT 0 0 0 1 1
+( -128 -512 0 ) ( -128 -512 1 ) ( -127 -512 0 ) Industrial/SUPPORT 0 0 0 1 1
+( -128 -512 0 ) ( -127 -512 0 ) ( -128 -511 0 ) Industrial/SUPPORT 0 0 0 1 1
+( 0 -480 160 ) ( 0 -479 160 ) ( 1 -480 160 ) Industrial/SUPPORT 0 0 0 1 1
+( 0 -480 32 ) ( 1 -480 32 ) ( 0 -480 33 ) Industrial/SUPPORT 0 0 0 1 1
+( 0 -480 32 ) ( 0 -480 33 ) ( 0 -479 32 ) Industrial/SUPPORT 0 0 0 1 1
+}
+// brush 2
+{
+( -128 -544 128 ) ( -128 -543 128 ) ( -128 -544 129 ) Industrial/METALTILE 0 0 0 1 1
+( -128 -832 128 ) ( -128 -832 129 ) ( -127 -832 128 ) Industrial/METALTILE 0 0 0 1 1
+( -128 -544 128 ) ( -127 -544 128 ) ( -128 -543 128 ) Industrial/METALTILE 0 0 0 1 1
+( 0 -512 160 ) ( 0 -511 160 ) ( 1 -512 160 ) Industrial/METALTILE 0 0 0 1 1
+( 0 -512 160 ) ( 1 -512 160 ) ( 0 -512 161 ) Industrial/METALTILE 0 0 0 1 1
+( 0 -512 160 ) ( 0 -512 161 ) ( 0 -511 160 ) Industrial/METALTILE 0 0 0 1 1
+}
+// brush 3
+{
+( -288 0 0 ) ( -288 1 0 ) ( -288 0 1 ) Bricks/BIGBRICKS 0 0 0 1 1
+( -288 0 0 ) ( -288 0 1 ) ( -287 0 0 ) Bricks/BIGBRICKS 0 0 0 1 1
+( -288 0 0 ) ( -287 0 0 ) ( -288 1 0 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 224 32 128 ) ( 224 33 128 ) ( 225 32 128 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 224 32 32 ) ( 225 32 32 ) ( 224 32 33 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 224 32 32 ) ( 224 32 33 ) ( 224 33 32 ) Bricks/BIGBRICKS 0 0 0 1 1
+}
+// brush 4
+{
+( -288 -896 0 ) ( -288 -895 0 ) ( -288 -896 1 ) Bricks/BIGBRICKS 0 0 0 1 1
+( -288 -1120 0 ) ( -288 -1120 1 ) ( -287 -1120 0 ) Bricks/BIGBRICKS 0 0 0 1 1
+( -288 -896 0 ) ( -287 -896 0 ) ( -288 -895 0 ) Bricks/BIGBRICKS 0 0 0 1 1
+( -256 0 128 ) ( -256 1 128 ) ( -255 0 128 ) Bricks/BIGBRICKS 0 0 0 1 1
+( -256 0 32 ) ( -255 0 32 ) ( -256 0 33 ) Bricks/BIGBRICKS 0 0 0 1 1
+( -256 0 32 ) ( -256 0 33 ) ( -256 1 32 ) Bricks/BIGBRICKS 0 0 0 1 1
+}
+// brush 5
+{
+( -256 -1120 0 ) ( -256 -1119 0 ) ( -256 -1120 1 ) Bricks/BIGBRICKS 0 0 0 1 1
+( -288 -1120 0 ) ( -288 -1120 1 ) ( -287 -1120 0 ) Bricks/BIGBRICKS 0 0 0 1 1
+( -288 -1120 0 ) ( -287 -1120 0 ) ( -288 -1119 0 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 224 -1088 128 ) ( 224 -1087 128 ) ( 225 -1088 128 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 224 -1088 32 ) ( 225 -1088 32 ) ( 224 -1088 33 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 224 -1088 32 ) ( 224 -1088 33 ) ( 224 -1087 32 ) Bricks/BIGBRICKS 0 0 0 1 1
+}
+// brush 6
+{
+( 192 -896 0 ) ( 192 -895 0 ) ( 192 -896 1 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 192 -1088 0 ) ( 192 -1088 1 ) ( 193 -1088 0 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 192 -896 0 ) ( 193 -896 0 ) ( 192 -895 0 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 224 0 128 ) ( 224 1 128 ) ( 225 0 128 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 224 0 32 ) ( 225 0 32 ) ( 224 0 33 ) Bricks/BIGBRICKS 0 0 0 1 1
+( 224 0 32 ) ( 224 0 33 ) ( 224 1 32 ) Bricks/BIGBRICKS 0 0 0 1 1
+}
+}
