@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Quartz_003.obj-182c8a1f4e62e0883c66e96a4d9a342f.mesh"
+
+[deps]
+
+files=[ "res://.import/Quartz_003.obj-182c8a1f4e62e0883c66e96a4d9a342f.mesh" ]
+
+source_file="res://models/gems/Quartz_003.obj"
+dest_files=[ "res://.import/Quartz_003.obj-182c8a1f4e62e0883c66e96a4d9a342f.mesh", "res://.import/Quartz_003.obj-182c8a1f4e62e0883c66e96a4d9a342f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hexagon_Gem_003.obj-0fa6812ab25553418744d6b6ac5a8f99.mesh"
+
+[deps]
+
+files=[ "res://.import/Hexagon_Gem_003.obj-0fa6812ab25553418744d6b6ac5a8f99.mesh" ]
+
+source_file="res://models/gems/Hexagon_Gem_003.obj"
+dest_files=[ "res://.import/Hexagon_Gem_003.obj-0fa6812ab25553418744d6b6ac5a8f99.mesh", "res://.import/Hexagon_Gem_003.obj-0fa6812ab25553418744d6b6ac5a8f99.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

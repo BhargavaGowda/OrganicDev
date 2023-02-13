@@ -1,0 +1,106 @@
+// Game: Qodot
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures/Bricks;textures/Industrial;textures/Rocks;textures/Tech;textures/Urban"
+// brush 0
+{
+( -272 -1104 -32 ) ( -272 16 -32 ) ( -272 -1104 416 ) Industrial/CROSSCUBE 0 0 0 1 1
+( -272 -1104 416 ) ( -240 -1104 416 ) ( -272 -1104 -32 ) Industrial/CROSSCUBE 0 0 0 1 1
+( -272 -1104 -32 ) ( -240 -1104 -32 ) ( -272 16 -32 ) Industrial/CROSSCUBE 0 0 0 1 1
+( -272 16 208 ) ( -240 16 208 ) ( -272 -1104 208 ) Industrial/CROSSCUBE 0 0 0 1 1
+( -272 16 -32 ) ( -240 16 -32 ) ( -272 16 416 ) Industrial/CROSSCUBE 0 0 0 1 1
+( -240 -1104 -32 ) ( -240 -1104 416 ) ( -240 16 -32 ) Industrial/CROSSCUBE 0 0 0 1 1
+}
+// brush 1
+{
+( -240 16 416 ) ( -240 -16 416 ) ( -240 16 -32 ) Industrial/CROSSCUBE 0 0 0 1 1
+( 176 -16 416 ) ( 176 -16 -32 ) ( -240 -16 416 ) Industrial/CROSSCUBE 0 0 0 1 1
+( -240 16 -32 ) ( -240 -16 -32 ) ( 176 16 -32 ) Industrial/CROSSCUBE 0 0 0 1 1
+( 176 16 208 ) ( 176 -16 208 ) ( -240 16 208 ) Industrial/CROSSCUBE 0 0 0 1 1
+( 176 16 416 ) ( -240 16 416 ) ( 176 16 -32 ) Industrial/CROSSCUBE 0 0 0 1 1
+( 176 16 -32 ) ( 176 -16 -32 ) ( 176 16 416 ) Industrial/CROSSCUBE 0 0 0 1 1
+}
+// brush 2
+{
+( -240 -1104 -32 ) ( -240 -1072 -32 ) ( -240 -1104 416 ) Industrial/CROSSCUBE 0 0 0 1 1
+( 176 -1104 -32 ) ( -240 -1104 -32 ) ( 176 -1104 416 ) Industrial/CROSSCUBE 0 0 0 1 1
+( 176 -1104 -32 ) ( 176 -1072 -32 ) ( -240 -1104 -32 ) Industrial/CROSSCUBE 0 0 0 1 1
+( -240 -1104 208 ) ( -240 -1072 208 ) ( 176 -1104 208 ) Industrial/CROSSCUBE 0 0 0 1 1
+( -240 -1072 -32 ) ( 176 -1072 -32 ) ( -240 -1072 416 ) Industrial/CROSSCUBE 0 0 0 1 1
+( 176 -1104 416 ) ( 176 -1072 416 ) ( 176 -1104 -32 ) Industrial/CROSSCUBE 0 0 0 1 1
+}
+// brush 3
+{
+( -240 -16 -32 ) ( -240 -16 0 ) ( -240 -1072 -32 ) Urban/PAVEMENT 0 0 0 1 1
+( -240 -1072 -32 ) ( -240 -1072 0 ) ( 176 -1072 -32 ) Urban/PAVEMENT 0 0 0 1 1
+( -240 -16 -32 ) ( -240 -1072 -32 ) ( 176 -16 -32 ) Urban/PAVEMENT 0 0 0 1 1
+( -240 -1072 0 ) ( -240 -16 0 ) ( 176 -1072 0 ) Urban/PAVEMENT 0 0 0 1 1
+( 176 -16 -32 ) ( 176 -16 0 ) ( -240 -16 -32 ) Urban/PAVEMENT 0 0 0 1 1
+( 176 -1072 -32 ) ( 176 -1072 0 ) ( 176 -16 -32 ) Urban/PAVEMENT 0 0 0 1 1
+}
+// brush 4
+{
+( 176 -960 -32 ) ( 176 -959 -32 ) ( 176 -960 -31 ) Urban/PAVEMENT 0 0 0 1 1
+( 176 -960 -32 ) ( 176 -960 -31 ) ( 177 -960 -32 ) Urban/PAVEMENT 16 0 0 1 1
+( 176 -960 -32 ) ( 177 -960 -32 ) ( 176 -959 -32 ) Urban/PAVEMENT 16 0 0 1 1
+( 208 -800 0 ) ( 208 -799 0 ) ( 209 -800 0 ) Urban/PAVEMENT 16 0 0 1 1
+( 208 -800 0 ) ( 209 -800 0 ) ( 208 -800 1 ) Urban/PAVEMENT 16 0 0 1 1
+( 560 -800 0 ) ( 560 -800 1 ) ( 560 -799 0 ) Urban/PAVEMENT 0 0 0 1 1
+}
+// brush 5
+{
+( 176 -400 -16 ) ( 176 -399 -16 ) ( 176 -400 -15 ) Urban/PAVEMENT 0 0 0 1 1
+( 176 -400 -16 ) ( 176 -400 -15 ) ( 177 -400 -16 ) Urban/PAVEMENT 0 0 0 1 1
+( 176 -400 -32 ) ( 177 -400 -32 ) ( 176 -399 -32 ) Urban/PAVEMENT 0 0 0 1 1
+( 192 -224 0 ) ( 192 -223 0 ) ( 193 -224 0 ) Urban/PAVEMENT 0 0 0 1 1
+( 192 -224 0 ) ( 193 -224 0 ) ( 192 -224 1 ) Urban/PAVEMENT 0 0 0 1 1
+( 560 -224 0 ) ( 560 -224 1 ) ( 560 -223 0 ) Urban/PAVEMENT 0 0 0 1 1
+}
+// brush 6
+{
+( 448 -800 -32 ) ( 448 -799 -32 ) ( 448 -800 -31 ) Urban/PAVEMENT 0 0 0 1 1
+( 448 -800 -32 ) ( 448 -800 -31 ) ( 449 -800 -32 ) Urban/PAVEMENT 0 0 0 1 1
+( 448 -800 -32 ) ( 449 -800 -32 ) ( 448 -799 -32 ) Urban/PAVEMENT 0 0 0 1 1
+( 512 -784 0 ) ( 512 -783 0 ) ( 513 -784 0 ) Urban/PAVEMENT 0 0 0 1 1
+( 512 -400 -16 ) ( 513 -400 -16 ) ( 512 -400 -15 ) Urban/PAVEMENT 0 0 0 1 1
+( 624 -784 -16 ) ( 624 -784 -15 ) ( 624 -783 -16 ) Urban/PAVEMENT 0 0 0 1 1
+}
+// brush 7
+{
+( 176 -400 0 ) ( 176 -399 0 ) ( 176 -400 1 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 176 -400 0 ) ( 176 -400 1 ) ( 177 -400 0 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 176 -400 0 ) ( 177 -400 0 ) ( 176 -399 0 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 448 -384 32 ) ( 448 -383 32 ) ( 449 -384 32 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 448 -384 16 ) ( 449 -384 16 ) ( 448 -384 17 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 448 -384 16 ) ( 448 -384 17 ) ( 448 -383 16 ) Bricks/SLIMBRICKS 0 0 0 1 1
+}
+// brush 8
+{
+( 448 -800 0 ) ( 448 -799 0 ) ( 448 -800 1 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 448 -800 0 ) ( 448 -800 1 ) ( 449 -800 0 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 448 -800 0 ) ( 449 -800 0 ) ( 448 -799 0 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 464 -384 32 ) ( 464 -383 32 ) ( 465 -384 32 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 464 -384 16 ) ( 465 -384 16 ) ( 464 -384 17 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 464 -384 16 ) ( 464 -384 17 ) ( 464 -383 16 ) Bricks/SLIMBRICKS 0 0 0 1 1
+}
+// brush 9
+{
+( 176 -816 0 ) ( 176 -815 0 ) ( 176 -816 1 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 176 -816 0 ) ( 176 -816 1 ) ( 177 -816 0 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 176 -816 0 ) ( 177 -816 0 ) ( 176 -815 0 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 464 -800 32 ) ( 464 -799 32 ) ( 465 -800 32 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 464 -800 16 ) ( 465 -800 16 ) ( 464 -800 17 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 464 -800 16 ) ( 464 -800 17 ) ( 464 -799 16 ) Bricks/SLIMBRICKS 0 0 0 1 1
+}
+// brush 10
+{
+( 160 -816 0 ) ( 160 -815 0 ) ( 160 -816 1 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 160 -816 0 ) ( 160 -816 1 ) ( 161 -816 0 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 160 -816 0 ) ( 161 -816 0 ) ( 160 -815 0 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 176 -384 32 ) ( 176 -383 32 ) ( 177 -384 32 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 176 -384 16 ) ( 177 -384 16 ) ( 176 -384 17 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( 176 -384 16 ) ( 176 -384 17 ) ( 176 -383 16 ) Bricks/SLIMBRICKS 0 0 0 1 1
+}
+}
