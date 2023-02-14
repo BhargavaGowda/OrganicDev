@@ -10,6 +10,7 @@ var bias = 0.0
 var eta = 0.1
 var error = 0
 var cached_errors = []
+var maxActivation = 5
 
 func forward():
 	cached_a=bias+input
@@ -57,6 +58,7 @@ func preUpdate():
 	
 func postUpdate():
 	a = cached_a
+	a = max(min(a,maxActivation),-1*maxActivation)
 	for i in range(len(inps)):
 		inps[i].error=cached_errors[i]
 	

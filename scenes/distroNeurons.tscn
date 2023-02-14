@@ -147,28 +147,28 @@ material/0 = SubResource( 10 )
 script = ExtResource( 7 )
 
 [node name="N2" type="MeshInstance" parent="Brain1"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.731548, 0, -2.96034 )
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.776586, 0, -1.86808 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 10 )
 script = ExtResource( 7 )
 
 [node name="N3" type="MeshInstance" parent="Brain1"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.56362, 0, -1.95197 )
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.582841, 0, -1.95197 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 10 )
 script = ExtResource( 7 )
 
 [node name="N4" type="MeshInstance" parent="Brain1"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.527323, 0, -1.84104 )
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.527323, 0, -3.10973 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 10 )
 script = ExtResource( 7 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -4.37114e-08, 0.228062, -0.973647, 0, 0.973647, 0.228062, 1, 9.96891e-09, -4.25594e-08, -6.5626, 7.34667, -1.69765e-07 )
+transform = Transform( -4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 0.0583321, 8.07526, 4.61905e-08 )
 
 [node name="inpGem" type="MeshInstance" parent="."]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 5, 2.74146 )
@@ -186,6 +186,7 @@ script = ExtResource( 10 )
 
 [node name="outGem" type="MeshInstance" parent="."]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -2 )
+visible = false
 mesh = ExtResource( 9 )
 material/0 = SubResource( 12 )
 script = ExtResource( 11 )

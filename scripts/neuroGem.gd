@@ -4,7 +4,7 @@ const DNeuron = preload("DistroNeurons.gd")
 var N = DNeuron.new()
 var col = Color(0,0,0)
 
-var maxActivation = 1.0
+var maxActivation = 3
 
 func _ready():
 	set_surface_material(0,get_active_material(0).duplicate())
