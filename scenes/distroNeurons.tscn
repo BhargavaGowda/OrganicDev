@@ -1,0 +1,191 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=1]
+[ext_resource path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" type="Resource" id=2]
+[ext_resource path="res://textures/Bricks/SLIMBRICKS.png" type="Texture" id=3]
+[ext_resource path="res://textures/Urban/CHESS.png" type="Texture" id=4]
+[ext_resource path="res://textures/Wood/WOODA.png" type="Texture" id=5]
+[ext_resource path="res://models/gems/Crystal_002.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://scripts/neuroGem.gd" type="Script" id=7]
+[ext_resource path="res://scripts/Brain.gd" type="Script" id=8]
+[ext_resource path="res://models/gems/Diamond_001.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://scripts/inpGem.gd" type="Script" id=10]
+[ext_resource path="res://scripts/outGem.gd" type="Script" id=11]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 5 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_texture = ExtResource( 4 )
+
+[sub_resource type="ArrayMesh" id=5]
+surfaces/0 = {
+"aabb": AABB( -19, -1, -22, 36, 2.00001, 46 ),
+"array_data": PoolByteArray( 0, 0, 152, 193, 0, 0, 128, 63, 0, 0, 176, 193, 127, 127, 127, 193, 192, 200, 0, 184, 0, 0, 152, 193, 0, 0, 128, 191, 0, 0, 176, 193, 127, 127, 127, 193, 192, 200, 0, 56, 0, 0, 136, 65, 0, 0, 128, 191, 0, 0, 176, 193, 127, 127, 127, 193, 64, 72, 0, 56, 0, 0, 136, 65, 0, 0, 128, 63, 0, 0, 176, 193, 127, 127, 127, 193, 64, 72, 0, 184, 0, 0, 152, 193, 0, 0, 128, 63, 0, 0, 176, 193, 129, 0, 0, 63, 128, 201, 0, 184, 0, 0, 152, 193, 0, 0, 128, 63, 0, 0, 192, 65, 129, 0, 0, 63, 0, 74, 0, 184, 0, 0, 152, 193, 0, 0, 128, 191, 0, 0, 192, 65, 129, 0, 0, 63, 0, 74, 0, 56, 0, 0, 152, 193, 0, 0, 128, 191, 0, 0, 176, 193, 129, 0, 0, 63, 128, 201, 0, 56, 0, 0, 136, 65, 0, 0, 128, 191, 0, 0, 176, 193, 0, 129, 0, 193, 128, 201, 64, 200, 0, 0, 152, 193, 0, 0, 128, 191, 0, 0, 176, 193, 0, 129, 0, 193, 128, 201, 192, 72, 0, 0, 152, 193, 0, 0, 128, 191, 0, 0, 192, 65, 0, 129, 0, 193, 0, 74, 192, 72, 0, 0, 136, 65, 0, 0, 128, 191, 0, 0, 192, 65, 0, 129, 0, 193, 0, 74, 64, 200, 0, 0, 136, 65, 0, 0, 128, 63, 0, 0, 176, 193, 0, 127, 0, 63, 128, 201, 64, 200, 0, 0, 136, 65, 0, 0, 128, 63, 0, 0, 192, 65, 0, 127, 0, 63, 0, 74, 64, 200, 0, 0, 152, 193, 0, 0, 128, 63, 0, 0, 192, 65, 0, 127, 0, 63, 0, 74, 192, 72, 0, 0, 152, 193, 0, 0, 128, 63, 0, 0, 176, 193, 0, 127, 0, 63, 128, 201, 192, 72, 0, 0, 136, 65, 0, 0, 128, 63, 0, 0, 176, 193, 127, 0, 0, 193, 128, 201, 0, 184, 0, 0, 136, 65, 0, 0, 128, 191, 0, 0, 176, 193, 127, 0, 0, 193, 128, 201, 0, 56, 0, 0, 136, 65, 0, 0, 128, 191, 0, 0, 192, 65, 127, 0, 0, 193, 0, 74, 0, 56, 0, 0, 136, 65, 0, 0, 128, 63, 0, 0, 192, 65, 127, 0, 0, 193, 0, 74, 0, 184, 0, 0, 152, 193, 0, 0, 128, 63, 0, 0, 192, 65, 0, 0, 127, 63, 192, 200, 0, 184, 0, 0, 136, 65, 0, 0, 128, 63, 0, 0, 192, 65, 0, 0, 127, 63, 64, 72, 0, 184, 0, 0, 136, 65, 0, 0, 128, 191, 0, 0, 192, 65, 0, 0, 127, 63, 64, 72, 0, 56, 0, 0, 152, 193, 0, 0, 128, 191, 0, 0, 192, 65, 0, 0, 127, 63, 192, 200, 0, 56 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 4, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 8, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 12, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 16, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 20, 0, 22, 0, 23, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 36,
+"material": SubResource( 2 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+surfaces/1 = {
+"aabb": AABB( -2, 1, -3, 5, 3, 6 ),
+"array_data": PoolByteArray( 0, 0, 0, 192, 0, 0, 0, 64, 0, 0, 64, 192, 127, 127, 127, 193, 0, 188, 0, 188, 0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 64, 192, 127, 127, 127, 193, 0, 188, 0, 184, 0, 0, 64, 64, 0, 0, 128, 63, 0, 0, 64, 192, 127, 127, 127, 193, 0, 62, 0, 184, 0, 0, 64, 64, 0, 0, 0, 64, 0, 0, 64, 192, 127, 127, 127, 193, 0, 62, 0, 188, 0, 0, 0, 192, 0, 0, 0, 64, 0, 0, 64, 192, 129, 0, 0, 63, 0, 190, 0, 188, 0, 0, 0, 192, 0, 0, 0, 64, 0, 0, 64, 64, 129, 0, 0, 63, 0, 62, 0, 188, 0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 64, 64, 129, 0, 0, 63, 0, 62, 0, 184, 0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 64, 192, 129, 0, 0, 63, 0, 190, 0, 184, 0, 0, 64, 64, 0, 0, 128, 63, 0, 0, 64, 192, 0, 129, 0, 193, 0, 190, 0, 190, 0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 64, 192, 0, 129, 0, 193, 0, 190, 0, 60, 0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 64, 64, 0, 129, 0, 193, 0, 62, 0, 60, 0, 0, 64, 64, 0, 0, 128, 63, 0, 0, 64, 64, 0, 129, 0, 193, 0, 62, 0, 190, 0, 0, 64, 64, 0, 0, 0, 64, 0, 0, 64, 192, 0, 127, 0, 63, 0, 190, 0, 190, 0, 0, 64, 64, 0, 0, 0, 64, 0, 0, 64, 64, 0, 127, 0, 63, 0, 62, 0, 190, 0, 0, 0, 192, 0, 0, 0, 64, 0, 0, 64, 64, 0, 127, 0, 63, 0, 62, 0, 60, 0, 0, 0, 192, 0, 0, 0, 64, 0, 0, 64, 192, 0, 127, 0, 63, 0, 190, 0, 60, 0, 0, 64, 64, 0, 0, 0, 64, 0, 0, 64, 192, 127, 0, 0, 193, 0, 190, 0, 188, 0, 0, 64, 64, 0, 0, 128, 63, 0, 0, 64, 192, 127, 0, 0, 193, 0, 190, 0, 184, 0, 0, 64, 64, 0, 0, 128, 63, 0, 0, 64, 64, 127, 0, 0, 193, 0, 62, 0, 184, 0, 0, 64, 64, 0, 0, 0, 64, 0, 0, 64, 64, 127, 0, 0, 193, 0, 62, 0, 188, 0, 0, 0, 192, 0, 0, 0, 64, 0, 0, 64, 64, 0, 0, 127, 63, 0, 188, 0, 188, 0, 0, 64, 64, 0, 0, 0, 64, 0, 0, 64, 64, 0, 0, 127, 63, 0, 62, 0, 188, 0, 0, 64, 64, 0, 0, 128, 63, 0, 0, 64, 64, 0, 0, 127, 63, 0, 62, 0, 184, 0, 0, 0, 192, 0, 0, 128, 63, 0, 0, 64, 64, 0, 0, 127, 63, 0, 188, 0, 184, 0, 0, 128, 191, 0, 0, 128, 64, 0, 0, 128, 191, 127, 127, 127, 193, 0, 184, 0, 192, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 128, 191, 127, 127, 127, 193, 0, 184, 0, 188, 0, 0, 0, 64, 0, 0, 0, 64, 0, 0, 128, 191, 127, 127, 127, 193, 0, 60, 0, 188, 0, 0, 0, 64, 0, 0, 128, 64, 0, 0, 128, 191, 127, 127, 127, 193, 0, 60, 0, 192, 0, 0, 128, 191, 0, 0, 128, 64, 0, 0, 128, 191, 129, 0, 0, 63, 0, 184, 0, 192, 0, 0, 128, 191, 0, 0, 128, 64, 0, 0, 128, 63, 129, 0, 0, 63, 0, 56, 0, 192, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 128, 63, 129, 0, 0, 63, 0, 56, 0, 188, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 128, 191, 129, 0, 0, 63, 0, 184, 0, 188, 0, 0, 0, 64, 0, 0, 0, 64, 0, 0, 128, 191, 0, 129, 0, 193, 0, 184, 0, 188, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 128, 191, 0, 129, 0, 193, 0, 184, 0, 56, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 128, 63, 0, 129, 0, 193, 0, 56, 0, 56, 0, 0, 0, 64, 0, 0, 0, 64, 0, 0, 128, 63, 0, 129, 0, 193, 0, 56, 0, 188, 0, 0, 0, 64, 0, 0, 128, 64, 0, 0, 128, 191, 0, 127, 0, 63, 0, 184, 0, 188, 0, 0, 0, 64, 0, 0, 128, 64, 0, 0, 128, 63, 0, 127, 0, 63, 0, 56, 0, 188, 0, 0, 128, 191, 0, 0, 128, 64, 0, 0, 128, 63, 0, 127, 0, 63, 0, 56, 0, 56, 0, 0, 128, 191, 0, 0, 128, 64, 0, 0, 128, 191, 0, 127, 0, 63, 0, 184, 0, 56, 0, 0, 0, 64, 0, 0, 128, 64, 0, 0, 128, 191, 127, 0, 0, 193, 0, 184, 0, 192, 0, 0, 0, 64, 0, 0, 0, 64, 0, 0, 128, 191, 127, 0, 0, 193, 0, 184, 0, 188, 0, 0, 0, 64, 0, 0, 0, 64, 0, 0, 128, 63, 127, 0, 0, 193, 0, 56, 0, 188, 0, 0, 0, 64, 0, 0, 128, 64, 0, 0, 128, 63, 127, 0, 0, 193, 0, 56, 0, 192, 0, 0, 128, 191, 0, 0, 128, 64, 0, 0, 128, 63, 0, 0, 127, 63, 0, 184, 0, 192, 0, 0, 0, 64, 0, 0, 128, 64, 0, 0, 128, 63, 0, 0, 127, 63, 0, 60, 0, 192, 0, 0, 0, 64, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 127, 63, 0, 60, 0, 188, 0, 0, 128, 191, 0, 0, 0, 64, 0, 0, 128, 63, 0, 0, 127, 63, 0, 184, 0, 188 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 4, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 8, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 12, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 16, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 20, 0, 22, 0, 23, 0, 24, 0, 25, 0, 26, 0, 24, 0, 26, 0, 27, 0, 28, 0, 29, 0, 30, 0, 28, 0, 30, 0, 31, 0, 32, 0, 33, 0, 34, 0, 32, 0, 34, 0, 35, 0, 36, 0, 37, 0, 38, 0, 36, 0, 38, 0, 39, 0, 40, 0, 41, 0, 42, 0, 40, 0, 42, 0, 43, 0, 44, 0, 45, 0, 46, 0, 44, 0, 46, 0, 47, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 72,
+"material": SubResource( 3 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 48
+}
+surfaces/2 = {
+"aabb": AABB( -4, 4, -4, 9, 1.00001, 8 ),
+"array_data": PoolByteArray( 0, 0, 128, 192, 0, 0, 160, 64, 0, 0, 128, 192, 127, 127, 127, 193, 0, 192, 0, 193, 0, 0, 128, 192, 0, 0, 128, 64, 0, 0, 128, 192, 127, 127, 127, 193, 0, 192, 0, 192, 0, 0, 160, 64, 0, 0, 128, 64, 0, 0, 128, 192, 127, 127, 127, 193, 0, 65, 0, 192, 0, 0, 160, 64, 0, 0, 160, 64, 0, 0, 128, 192, 127, 127, 127, 193, 0, 65, 0, 193, 0, 0, 128, 192, 0, 0, 160, 64, 0, 0, 128, 192, 129, 0, 0, 63, 0, 192, 0, 193, 0, 0, 128, 192, 0, 0, 160, 64, 0, 0, 128, 64, 129, 0, 0, 63, 0, 64, 0, 193, 0, 0, 128, 192, 0, 0, 128, 64, 0, 0, 128, 64, 129, 0, 0, 63, 0, 64, 0, 192, 0, 0, 128, 192, 0, 0, 128, 64, 0, 0, 128, 192, 129, 0, 0, 63, 0, 192, 0, 192, 0, 0, 160, 64, 0, 0, 128, 64, 0, 0, 128, 192, 0, 129, 0, 193, 0, 192, 0, 193, 0, 0, 128, 192, 0, 0, 128, 64, 0, 0, 128, 192, 0, 129, 0, 193, 0, 192, 0, 64, 0, 0, 128, 192, 0, 0, 128, 64, 0, 0, 128, 64, 0, 129, 0, 193, 0, 64, 0, 64, 0, 0, 160, 64, 0, 0, 128, 64, 0, 0, 128, 64, 0, 129, 0, 193, 0, 64, 0, 193, 0, 0, 160, 64, 0, 0, 160, 64, 0, 0, 128, 192, 0, 127, 0, 63, 0, 192, 0, 193, 0, 0, 160, 64, 0, 0, 160, 64, 0, 0, 128, 64, 0, 127, 0, 63, 0, 64, 0, 193, 0, 0, 128, 192, 0, 0, 160, 64, 0, 0, 128, 64, 0, 127, 0, 63, 0, 64, 0, 64, 0, 0, 128, 192, 0, 0, 160, 64, 0, 0, 128, 192, 0, 127, 0, 63, 0, 192, 0, 64, 0, 0, 160, 64, 0, 0, 160, 64, 0, 0, 128, 192, 127, 0, 0, 193, 0, 192, 0, 193, 0, 0, 160, 64, 0, 0, 128, 64, 0, 0, 128, 192, 127, 0, 0, 193, 0, 192, 0, 192, 0, 0, 160, 64, 0, 0, 128, 64, 0, 0, 128, 64, 127, 0, 0, 193, 0, 64, 0, 192, 0, 0, 160, 64, 0, 0, 160, 64, 0, 0, 128, 64, 127, 0, 0, 193, 0, 64, 0, 193, 0, 0, 128, 192, 0, 0, 160, 64, 0, 0, 128, 64, 0, 0, 127, 63, 0, 192, 0, 193, 0, 0, 160, 64, 0, 0, 160, 64, 0, 0, 128, 64, 0, 0, 127, 63, 0, 65, 0, 193, 0, 0, 160, 64, 0, 0, 128, 64, 0, 0, 128, 64, 0, 0, 127, 63, 0, 65, 0, 192, 0, 0, 128, 192, 0, 0, 128, 64, 0, 0, 128, 64, 0, 0, 127, 63, 0, 192, 0, 192 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 4, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 8, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 12, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 16, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 20, 0, 22, 0, 23, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 36,
+"material": SubResource( 4 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="ConvexPolygonShape" id=6]
+points = PoolVector3Array( -19, 1, -22, -19, -1, -22, 17, -1, -22, 17, 1, -22, -19, 1, 24, -19, -1, 24, 17, -1, 24, 17, 1, 24 )
+
+[sub_resource type="ConvexPolygonShape" id=7]
+points = PoolVector3Array( -2, 2, -3, -2, 1, -3, 3, 1, -3, 3, 2, -3, -2, 2, 3, -2, 1, 3, 3, 1, 3, 3, 2, 3 )
+
+[sub_resource type="ConvexPolygonShape" id=8]
+points = PoolVector3Array( -1, 4, -1, -1, 2, -1, 2, 2, -1, 2, 4, -1, -1, 4, 1, -1, 2, 1, 2, 2, 1, 2, 4, 1 )
+
+[sub_resource type="ConvexPolygonShape" id=9]
+points = PoolVector3Array( -4, 5, -4, -4, 4, -4, 5, 4, -4, 5, 5, -4, -4, 5, 4, -4, 4, 4, 5, 4, 4, 5, 5, 4 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0.58, 1, 1, 1 )
+metallic = 1.0
+roughness = 0.53
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_color = Color( 1, 0.984314, 0.580392, 1 )
+metallic = 1.0
+roughness = 0.53
+
+[node name="Spatial" type="Spatial"]
+
+[node name="QodotMap" type="Spatial" parent="."]
+script = ExtResource( 1 )
+map_file = "C:/Projects/OrganicDev/QodotMaps/demo.map"
+inverse_scale_factor = 16.0
+entity_fgd = ExtResource( 2 )
+base_texture_dir = "res://textures"
+texture_file_extensions = PoolStringArray( "png" )
+worldspawn_layers = [  ]
+brush_clip_texture = "special/clip"
+face_skip_texture = "special/skip"
+texture_wads = [  ]
+material_file_extension = "tres"
+default_material = SubResource( 1 )
+uv_unwrap_texel_size = 1.0
+print_profiling_data = false
+use_trenchbroom_group_hierarchy = false
+tree_attach_batch_size = 16
+set_owner_batch_size = 16
+
+[node name="entity_0_worldspawn" type="StaticBody" parent="QodotMap"]
+
+[node name="entity_0_mesh_instance" type="MeshInstance" parent="QodotMap/entity_0_worldspawn"]
+use_in_baked_light = true
+mesh = SubResource( 5 )
+
+[node name="entity_0_brush_0_collision_shape" type="CollisionShape" parent="QodotMap/entity_0_worldspawn"]
+shape = SubResource( 6 )
+
+[node name="entity_0_brush_1_collision_shape" type="CollisionShape" parent="QodotMap/entity_0_worldspawn"]
+shape = SubResource( 7 )
+
+[node name="entity_0_brush_2_collision_shape" type="CollisionShape" parent="QodotMap/entity_0_worldspawn"]
+shape = SubResource( 8 )
+
+[node name="entity_0_brush_3_collision_shape" type="CollisionShape" parent="QodotMap/entity_0_worldspawn"]
+shape = SubResource( 9 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.304162, 0.83721, -0.454494, -0.219206, 0.525807, 0.821873, 0.927057, -0.150355, 0.343452, -11.5173, 12.0975, 0 )
+
+[node name="Brain1" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 3.07602 )
+script = ExtResource( 8 )
+
+[node name="N1" type="MeshInstance" parent="Brain1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, -3.5 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 10 )
+script = ExtResource( 7 )
+
+[node name="N5" type="MeshInstance" parent="Brain1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.840853, 0, -3.26132 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 10 )
+script = ExtResource( 7 )
+
+[node name="N2" type="MeshInstance" parent="Brain1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.731548, 0, -2.96034 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 10 )
+script = ExtResource( 7 )
+
+[node name="N3" type="MeshInstance" parent="Brain1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.56362, 0, -1.95197 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 10 )
+script = ExtResource( 7 )
+
+[node name="N4" type="MeshInstance" parent="Brain1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.527323, 0, -1.84104 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 10 )
+script = ExtResource( 7 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -4.37114e-08, 0.228062, -0.973647, 0, 0.973647, 0.228062, 1, 9.96891e-09, -4.25594e-08, -6.5626, 7.34667, -1.69765e-07 )
+
+[node name="inpGem" type="MeshInstance" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2, 5, 2.74146 )
+visible = false
+mesh = ExtResource( 9 )
+material/0 = SubResource( 11 )
+script = ExtResource( 10 )
+
+[node name="inpGem2" type="MeshInstance" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 5, 2.741 )
+visible = false
+mesh = ExtResource( 9 )
+material/0 = SubResource( 11 )
+script = ExtResource( 10 )
+
+[node name="outGem" type="MeshInstance" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -2 )
+mesh = ExtResource( 9 )
+material/0 = SubResource( 12 )
+script = ExtResource( 11 )

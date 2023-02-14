@@ -16,6 +16,7 @@ func forward():
 	
 	if len(inps)>0:
 		for i in range(len(inps)):
+#			print(i)
 			cached_a+=inps[i].a*inpWeights[i]
 		
 	
@@ -31,6 +32,7 @@ func backprop():
 		error*=0.5
 		
 	bias -= error
+	bias = max(min(bias,1.0),-1.0)
 	for i in range(len(inps)):
 		inpWeights[i] += error*-1*inps[i].a
 		cached_errors.append(-1*inpWeights[i]*error)
@@ -40,15 +42,24 @@ func decayWeights(decay=0.99):
 	for i in range(len(inpWeights)):
 		inpWeights[i] = decay*inpWeights[i]
 	
-func preUpdate():
+func preBackUpdate():
 	forward()
 	backprop()
+	input = 0
+	error = 0
 	
+func preUpdate():
+	forward()
+	for i in range(len(inps)):
+		cached_errors.append(0)
+	input = 0
+	error = 0
 	
 func postUpdate():
 	a = cached_a
 	for i in range(len(inps)):
 		inps[i].error=cached_errors[i]
+	
 		
 	
 	
