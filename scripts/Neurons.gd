@@ -12,10 +12,13 @@ func forward():
 		a = 0.0
 		for i in range(len(inps)):
 			a+=inps[i].forward()*inpWeights[i]
-		a+= bias
+			
+	#else make sure to set a before calling forward!
 	
-		if a < 0:
-			a*=0.5
+	a+= bias
+	
+	if a < 0:
+		a*=0.5
 	return a
 	
 func backprop(error):
