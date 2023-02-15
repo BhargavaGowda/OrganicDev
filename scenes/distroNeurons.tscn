@@ -5,7 +5,7 @@
 [ext_resource path="res://textures/Bricks/SLIMBRICKS.png" type="Texture" id=3]
 [ext_resource path="res://textures/Urban/CHESS.png" type="Texture" id=4]
 [ext_resource path="res://textures/Wood/WOODA.png" type="Texture" id=5]
-[ext_resource path="res://models/gems/Crystal_002.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://models/gems/Dipyramid_002.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://scripts/neuroGem.gd" type="Script" id=7]
 [ext_resource path="res://scripts/Brain.gd" type="Script" id=8]
 [ext_resource path="res://models/gems/Diamond_001.obj" type="ArrayMesh" id=9]
@@ -133,35 +133,35 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 3.07602 )
 script = ExtResource( 8 )
 
 [node name="N1" type="MeshInstance" parent="Brain1"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, -3.5 )
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, -4.02824 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 10 )
 script = ExtResource( 7 )
 
 [node name="N5" type="MeshInstance" parent="Brain1"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.840853, 0, -3.26132 )
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.984134, 0, -3.11939 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 10 )
 script = ExtResource( 7 )
 
 [node name="N2" type="MeshInstance" parent="Brain1"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.776586, 0, -1.86808 )
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.584514, 0, -1.58656 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 10 )
 script = ExtResource( 7 )
 
 [node name="N3" type="MeshInstance" parent="Brain1"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.582841, 0, -1.95197 )
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.546726, 0, -1.50894 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 10 )
 script = ExtResource( 7 )
 
 [node name="N4" type="MeshInstance" parent="Brain1"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.527323, 0, -3.10973 )
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.955469, 0, -3.0677 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 10 )

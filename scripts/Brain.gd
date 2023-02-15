@@ -38,8 +38,8 @@ func _physics_process(delta):
 	
 	
 	neurons[1].error = neurons[1].a-2
-	neurons[3].error = neurons[3].a+3
-	print(neurons[1].a)
+	neurons[3].error = neurons[3].a+2.5
+	print(neurons[1].inpWeights)
 	print(neurons[3].a)
 
 
