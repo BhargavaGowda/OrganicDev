@@ -1,7 +1,7 @@
 extends Spatial
 
 var neurons = []
-var eta = 0.1
+var eta = 0.04
 var inpgem1
 var inpgem2
 var outgem
@@ -18,8 +18,8 @@ func _ready():
 	neurons[0].inpWeights=[0.5]
 	neurons[1].inps = [neurons[2]]
 	neurons[1].inpWeights=[0.5]
-	neurons[2].inps = [neurons[3]]
-	neurons[2].inpWeights=[-2]
+	neurons[2].inps = [neurons[3],neurons[4]]
+	neurons[2].inpWeights=[-1,1]
 	neurons[3].inps = [neurons[4]]
 	neurons[3].inpWeights=[0.5]
 	neurons[4].inps = [neurons[0]]
@@ -39,8 +39,10 @@ func _physics_process(delta):
 	
 	neurons[1].error = neurons[1].a-2
 	neurons[3].error = neurons[3].a+2.5
-	print(neurons[1].inpWeights)
-	print(neurons[3].a)
+	if Input.is_action_pressed("ui_accept"):
+		neurons[1].error = neurons[1].a-2
+		neurons[3].error = neurons[3].a-2.5
+
 
 
 	for n in neurons:
@@ -51,7 +53,8 @@ func _physics_process(delta):
 	for n in neurons:
 		n.postUpdate()
 		
-	outgem.val = 2*neurons[0].a
+	outgem.x = neurons[1].a*2
+	outgem.z = neurons[3].a*2
 #	neurons[4].a = 5
 
 	

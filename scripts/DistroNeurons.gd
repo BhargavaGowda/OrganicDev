@@ -36,6 +36,7 @@ func backprop():
 	bias = max(min(bias,1.0),-1.0)
 	for i in range(len(inps)):
 		inpWeights[i] += error*-1*inps[i].a
+		inpWeights[i] = max(min(inpWeights[i],10.0),-10.0)
 		cached_errors.append(-1*inpWeights[i]*error)
 			
 
