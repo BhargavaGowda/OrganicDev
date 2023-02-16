@@ -3,7 +3,7 @@
 // entity 0
 {
 "classname" "worldspawn"
-"_tb_textures" "textures/Bricks;textures/Urban;textures/Wood"
+"_tb_textures" "textures/Bricks;textures/Industrial;textures/Tech;textures/Urban;textures/Wood"
 // brush 0
 {
 ( -352 144 -16 ) ( -352 145 -16 ) ( -352 144 -15 ) Wood/WOODA 0 0 0 1 1
@@ -33,11 +33,11 @@
 }
 // brush 3
 {
-( -64 -16 64 ) ( -64 -15 64 ) ( -64 -16 65 ) Urban/CHESS 0 0 0 1 1
-( -16 -64 64 ) ( -16 -64 65 ) ( -15 -64 64 ) Urban/CHESS 0 0 0 1 1
-( -16 -16 64 ) ( -15 -16 64 ) ( -16 -15 64 ) Urban/CHESS 0 0 0 1 1
-( 16 32 80 ) ( 16 33 80 ) ( 17 32 80 ) Urban/CHESS 0 0 0 1 1
-( 16 80 80 ) ( 17 80 80 ) ( 16 80 81 ) Urban/CHESS 0 0 0 1 1
-( 64 32 80 ) ( 64 32 81 ) ( 64 33 80 ) Urban/CHESS 0 0 0 1 1
+( -64 -16 64 ) ( -64 -15 64 ) ( -64 -16 65 ) Tech/BIGSQUARES 0 0 0 1 1
+( -16 -64 64 ) ( -16 -64 65 ) ( -15 -64 64 ) Tech/BIGSQUARES 0 0 0 1 1
+( -16 -16 64 ) ( -15 -16 64 ) ( -16 -15 64 ) Tech/BIGSQUARES 0 0 0 1 1
+( 16 32 80 ) ( 16 33 80 ) ( 17 32 80 ) Tech/BIGSQUARES 0 0 0 1 1
+( 16 80 80 ) ( 17 80 80 ) ( 16 80 81 ) Tech/BIGSQUARES 0 0 0 1 1
+( 64 32 80 ) ( 64 32 81 ) ( 64 33 80 ) Tech/BIGSQUARES 0 0 0 1 1
 }
 }

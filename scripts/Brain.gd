@@ -1,9 +1,8 @@
 extends Spatial
 
 var neurons = []
-var eta = 0.04
-var inpgem1
-var inpgem2
+var eta = 0.2
+var fc
 var outgem
 var maxAct = 3
 
@@ -25,36 +24,25 @@ func _ready():
 	neurons[4].inps = [neurons[0]]
 	neurons[4].inpWeights=[0.5]
 	
-	inpgem1 = get_node("/root/Spatial/inpGem")
-	inpgem2 = get_node("/root/Spatial/inpGem2")
+	fc = get_node("/root/Spatial/Field Crystal")
 	outgem = get_node("/root/Spatial/outGem")
 	
 func _physics_process(delta):
-	if Input.is_action_pressed("ui_down"):
-		neurons[0].input = 1
-	if Input.is_action_pressed("ui_up"):
-		neurons[0].input = -1
 	
+	neurons[1].error = neurons[1].a-fc.global_translation.x
+	neurons[3].error = neurons[3].a-fc.global_translation.z
 	
-	
-	neurons[1].error = neurons[1].a-2
-	neurons[3].error = neurons[3].a+2.5
-	if Input.is_action_pressed("ui_accept"):
-		neurons[1].error = neurons[1].a-2
-		neurons[3].error = neurons[3].a-2.5
-
-
+	print(neurons[1].error)
+	neurons[2].input = 2* outgem.pressureF
 
 	for n in neurons:
-
 		n.preBackUpdate()
-
 		
 	for n in neurons:
 		n.postUpdate()
 		
-	outgem.x = neurons[1].a*2
-	outgem.z = neurons[3].a*2
+	outgem.x = neurons[1].a
+	outgem.z = neurons[3].a
 #	neurons[4].a = 5
 
 	
