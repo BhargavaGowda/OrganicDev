@@ -3,33 +3,33 @@
 // entity 0
 {
 "classname" "worldspawn"
-"_tb_textures" "textures/Bricks;textures/Industrial;textures/Tech;textures/Urban;textures/Wood"
+"_tb_textures" "textures/LittleMartianTextures;textures/Tech"
 // brush 0
 {
-( -352 144 -16 ) ( -352 145 -16 ) ( -352 144 -15 ) Wood/WOODA 0 0 0 1 1
-( -64 -304 -16 ) ( -64 -304 -15 ) ( -63 -304 -16 ) Wood/WOODA 0 0 0 1 1
-( -64 144 -16 ) ( -63 144 -16 ) ( -64 145 -16 ) Wood/WOODA 0 0 0 1 1
-( 64 272 16 ) ( 64 273 16 ) ( 65 272 16 ) Wood/WOODA 0 0 0 1 1
-( 64 272 16 ) ( 65 272 16 ) ( 64 272 17 ) Wood/WOODA 0 0 0 1 1
-( 384 272 16 ) ( 384 272 17 ) ( 384 273 16 ) Wood/WOODA 0 0 0 1 1
+( -352 144 -16 ) ( -352 145 -16 ) ( -352 144 -15 ) LittleMartianTextures/TILE_2A 0 0 0 1 1
+( -64 -304 -16 ) ( -64 -304 -15 ) ( -63 -304 -16 ) LittleMartianTextures/TILE_2A 0 0 0 1 1
+( -64 144 -16 ) ( -63 144 -16 ) ( -64 145 -16 ) LittleMartianTextures/TILE_2A 0 0 0 1 1
+( 64 272 16 ) ( 64 273 16 ) ( 65 272 16 ) LittleMartianTextures/TILE_2A 0 0 0 1 1
+( 64 272 16 ) ( 65 272 16 ) ( 64 272 17 ) LittleMartianTextures/TILE_2A 0 0 0 1 1
+( 384 272 16 ) ( 384 272 17 ) ( 384 273 16 ) LittleMartianTextures/TILE_2A 0 0 0 1 1
 }
 // brush 1
 {
-( -48 -32 16 ) ( -48 -31 16 ) ( -48 -32 17 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( -32 -32 16 ) ( -32 -32 17 ) ( -31 -32 16 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( -32 -32 16 ) ( -31 -32 16 ) ( -32 -31 16 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( 32 48 32 ) ( 32 49 32 ) ( 33 48 32 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( 32 48 32 ) ( 33 48 32 ) ( 32 48 33 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( 48 48 32 ) ( 48 48 33 ) ( 48 49 32 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( -48 -32 16 ) ( -48 -31 16 ) ( -48 -32 17 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( -32 -32 16 ) ( -32 -32 17 ) ( -31 -32 16 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( -32 -32 16 ) ( -31 -32 16 ) ( -32 -31 16 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( 32 48 32 ) ( 32 49 32 ) ( 33 48 32 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( 32 48 32 ) ( 33 48 32 ) ( 32 48 33 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( 48 48 32 ) ( 48 48 33 ) ( 48 49 32 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
 }
 // brush 2
 {
-( -16 0 32 ) ( -16 1 32 ) ( -16 0 33 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( -16 -16 32 ) ( -16 -16 33 ) ( -15 -16 32 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( -16 0 32 ) ( -15 0 32 ) ( -16 1 32 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( 16 32 64 ) ( 16 33 64 ) ( 17 32 64 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( 16 32 48 ) ( 17 32 48 ) ( 16 32 49 ) Bricks/SLIMBRICKS 0 0 0 1 1
-( 16 32 48 ) ( 16 32 49 ) ( 16 33 48 ) Bricks/SLIMBRICKS 0 0 0 1 1
+( -16 0 32 ) ( -16 1 32 ) ( -16 0 33 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( -16 -16 32 ) ( -16 -16 33 ) ( -15 -16 32 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( -16 0 32 ) ( -15 0 32 ) ( -16 1 32 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( 16 32 64 ) ( 16 33 64 ) ( 17 32 64 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( 16 32 48 ) ( 17 32 48 ) ( 16 32 49 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
+( 16 32 48 ) ( 16 32 49 ) ( 16 33 48 ) LittleMartianTextures/CONCRETE_2A 0 0 0 1 1
 }
 // brush 3
 {
