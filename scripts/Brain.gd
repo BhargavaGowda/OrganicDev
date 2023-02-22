@@ -1,7 +1,7 @@
 extends Spatial
 
 var neurons = []
-var eta = 0.2
+var eta = 0.1
 var fc
 var outgem
 var maxAct = 3
@@ -18,7 +18,7 @@ func _ready():
 	neurons[1].inps = [neurons[2]]
 	neurons[1].inpWeights=[0.5]
 	neurons[2].inps = [neurons[3],neurons[4]]
-	neurons[2].inpWeights=[-1,1]
+	neurons[2].inpWeights=[0.5,0.5]
 	neurons[3].inps = [neurons[4]]
 	neurons[3].inpWeights=[0.5]
 	neurons[4].inps = [neurons[0]]
@@ -33,7 +33,12 @@ func _physics_process(delta):
 	neurons[3].error = neurons[3].a-fc.global_translation.z
 	
 	print(neurons[1].error)
-	neurons[2].input = 2* outgem.pressureF
+#	neurons[2].input = 2* outgem.pressureF
+	if Input.is_action_pressed("ui_accept"):
+		neurons[0].input = -2
+	if Input.is_action_pressed("ui_select"):
+		neurons[0].input = 2
+
 
 	for n in neurons:
 		n.preBackUpdate()
