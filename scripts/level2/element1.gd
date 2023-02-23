@@ -7,7 +7,7 @@ var error = 0
 var ray
 
 func init():
-	ray = get_node("RayCast")
+
 	print("ele1 ready")
 	
 
