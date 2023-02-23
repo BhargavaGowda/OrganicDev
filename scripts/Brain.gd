@@ -29,8 +29,8 @@ func _ready():
 	
 func _physics_process(delta):
 	
-	neurons[1].error = neurons[1].a-fc.global_translation.x
-	neurons[3].error = neurons[3].a-fc.global_translation.z
+#	neurons[1].error = neurons[1].a-fc.global_translation.x
+#	neurons[3].error = neurons[3].a-fc.global_translation.z
 	
 	print(neurons[1].error)
 #	neurons[2].input = 2* outgem.pressureF
